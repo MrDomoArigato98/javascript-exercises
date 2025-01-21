@@ -1,5 +1,11 @@
 const sumAll = function(rangeIntOne, rangeIntTwo) {
  
+    if(!Number.isInteger(rangeIntOne) || !Number.isInteger(rangeIntTwo)){
+        return "ERROR"
+    }
+    if(rangeIntOne<0 || rangeIntTwo < 0){
+        return "ERROR"
+    }
 
     let startPosition = Math.min(rangeIntOne, rangeIntTwo);
     let endPosition = Math.max(rangeIntOne, rangeIntTwo);
