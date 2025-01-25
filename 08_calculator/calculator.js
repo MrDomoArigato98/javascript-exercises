@@ -10,20 +10,30 @@ const subtract = function(val1,val2) {
   return total;
 };
 
-const sum = function() {
-	
+const sum = function(array) {
+	total = array.reduce(function(sum,value) {
+    return sum + value;
+  },0);
+  return total;
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  total = array.reduce(function(sum,value){
+    return sum*value;
+  })
+  return total;
 };
 
-const power = function() {
-	
+const power = function(number,power) {
+	return Math.pow(number,power);
 };
 
-const factorial = function() {
-	
+const factorial = function(value) {
+  let sum = 1 ;
+	for (let index = value; index > 0; index--){
+    sum *= index
+  }
+  return sum
 };
 
 // Do not edit below this line
